@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Generator</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #000000, #ffffff);
+    }
+
+    h1 {
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .color-picker {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .color-picker input {
+      width: 200px;
+      height: 30px;
+      border: none;
+      margin: 0 10px;
+      text-align: center;
+    }
+
+    .color-box {
+      width: 300px;
+      height: 150px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Background Generator</h1>
+
+  <div class="color-picker">
+    <input type="color" id="color1" value="#000000">
+    <input type="color" id="color2" value="#ffffff">
+  </div>
+
+  <div class="color-box"></div>
+
+  <script>
+    const color1 = document.getElementById('color1');
+    const color2 = document.getElementById('color2');
+    const colorBox = document.querySelector('.color-box');
+
+    function setGradient() {
+      colorBox.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value})`;
+    }
+
+    color1.addEventListener('input', setGradient);
+    color2.addEventListener('input', setGradient);
+  </script>
+</body>
+</html>

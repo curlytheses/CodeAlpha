@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Converter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>File Converter</h1>
+    <div>
+      <label for="csvFile">Select a CSV file:</label>
+      <input type="file" id="csvFile" accept=".csv">
+    </div>
+    <button onclick="convert()">Convert to JSON</button>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

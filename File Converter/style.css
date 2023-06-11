@@ -1,0 +1,27 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  #result {
+    margin-top: 20px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
